@@ -46,6 +46,8 @@ MMRMMRMRRM
 Expected Output:
 1 3 N
 5 1 E
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
