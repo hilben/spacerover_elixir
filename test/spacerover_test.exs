@@ -9,10 +9,17 @@ defmodule SpaceroverTest do
   
   test "spacerover is working" do
     input = 
-      "4 4
-      3 33 "
+      "5 5
+      1 2 N
+      LMLMLMLMM
+      3 3 E
+      MMRMMRMRRM"
     output =
-      ""
-    assert Spacerover.InputProcessor.process(input) ==  output
+      "1 3 N
+       5 1 E"
+    input_processed = input |> String.split("\n")
+    IO.puts "processed input"
+    IO.puts input
+    assert Spacerover.InputProcessor.process(input_processed) ==  output
   end
 end
